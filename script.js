@@ -20,3 +20,10 @@ box.forEach((item, index) => {
                 item.style.cssText= "background-color:black;";
             });
 })
+
+const btn = document.querySelector("#reset");
+btn.addEventListener('click', () => {
+    box.forEach((item) => {
+        item.style.cssText = "background-color:white;";
+    })
+})
