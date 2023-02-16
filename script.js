@@ -6,8 +6,17 @@ for (let i = 0; i < 16; i++) {
     row[i].classList.add('row');
     container.appendChild(row[i]);
     for (let j = 0; j < 16; j++) {
-        col[i] = document.createElement('div');
-        row[i].appendChild(col[i]);
+        col[j] = document.createElement('div');
+        col[j].classList.add('box');
+        row[i].appendChild(col[j]);
+        
     }
 }
 
+
+const box = document.querySelectorAll(".box");
+box.forEach((item, index) => {
+    item.addEventListener('mouseover', () => {
+                item.style.cssText= "background-color:black;";
+            });
+})
