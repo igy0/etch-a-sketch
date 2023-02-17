@@ -1,14 +1,20 @@
+* {
+    font-family: monospace;
+}
+
 body {
     padding:0;
     margin:0;
     margin-top:6em;
     display: flex;
     justify-content: space-evenly;
+    background-color: steelblue;
 }
 
 .row div {
     border: 1px solid black;
     padding:15px;
+    background-color: white;
 }
 
 .container {
@@ -22,4 +28,17 @@ body {
 }
 h1 {
     font-size:40px;
+}
+
+#rangeValue {
+    padding:0.5em 0;
+    font-size: 2em;
+}
+
+#reset {
+    padding:5px 30px;
+}
+
+#reset:hover {
+    text-decoration: underline;
 }

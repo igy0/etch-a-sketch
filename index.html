@@ -12,8 +12,9 @@
 <body>
     <aside>
         <h1>Etch-A-Sketch</h1>
-        <input type="range" id="sizeSlider" min="4" max="64" step="4" value="16" onchange="updateRange(this.value)">
-        <div id="rageValue">16</div>
+        
+        <input type="range" name="rangeSlider" id="sizeSlider" min="4" max="64" step="4" value="16" onChange="createEtch(range.value)">
+        <div id="rangeValue">16 x 16</div>
         <button id="reset">Reset</button>
     </aside>
     
