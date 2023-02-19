@@ -12,6 +12,7 @@ body {
 }
 
 .row div {
+    /* use flex basis and grow to  make bigger and fill correctly to 960px */
     border: 1px solid black;
     padding:15px;
     background-color: white;
@@ -20,6 +21,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    width:960px;
 }
 
 .row {
